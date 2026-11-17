@@ -3,117 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishnu Learning Hub - SSC, Railway, Police Study Material</title>
+    <title>Vishnu Learning Hub - 8-8 Previous Year Paper Pairs & Current Affairs 2026</title>
+    <meta name="description" content="Vishnu Learning Hub - SSC GD, CGL, Railway RRB, MP Police, Delhi Police Previous Year Papers, Online Mock Tests & 2026 Current Affairs PDFs.">
+    <meta name="keywords" content="Vishnu Learning Hub, SSC GD previous year paper pdf, MP Police old paper, Railway RRB mock test, Delhi Police paper, Current Affairs 2026 PDF">
+    <meta name="author" content="Vishnu Learning Hub">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
-        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        body { background-color: #f1f5f9; color: #1e293b; line-height: 1.6; }
         
-        /* हेडर और लोगो डिजाइन */
-        header { background: #1e3a8a; color: white; padding: 15px 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .logo-container { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 10px; }
-        .logo-container img { width: 55px; height: 55px; border-radius: 50%; border: 2px solid #fff; object-fit: cover; background: #fff; }
+        /* हेडर */
+        header { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; padding: 20px 15px; text-align: center; }
+        .logo-container { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 8px; }
+        .logo-container img { width: 60px; height: 60px; border-radius: 50%; border: 2px solid #fff; object-fit: cover; background: #fff; }
         header h1 { font-size: 24px; }
-        nav { margin-top: 10px; }
-        nav a { color: #e0e7ff; text-decoration: none; margin: 0 10px; font-weight: bold; font-size: 15px; }
-        nav a:hover { color: #fbbf24; }
+        nav { margin-top: 12px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+        nav a { color: #e0e7ff; text-decoration: none; font-weight: bold; font-size: 13px; background: rgba(255,255,255,0.15); padding: 6px 12px; border-radius: 20px; }
+        nav a:hover { background: #fbbf24; color: #000; }
 
-        /* मुख्य सेक्शन */
-        .container { max-width: 1000px; margin: 20px auto; padding: 0 15px; }
-        .section-title { background: #2563eb; color: white; padding: 10px 15px; border-radius: 6px; margin: 25px 0 15px; font-size: 18px; }
+        /* कंटेनर और सेक्शन */
+        .container { max-width: 1050px; margin: 20px auto; padding: 0 15px; }
+        .main-heading { text-align: center; font-size: 21px; color: #0f172a; margin: 20px 0 10px; border-bottom: 3px solid #2563eb; display: inline-block; padding-bottom: 5px; }
+        .section-header { display: flex; justify-content: space-between; align-items: center; background: #0f172a; color: white; padding: 12px 15px; border-radius: 8px; margin: 28px 0 15px; }
+        .section-header.ssc { background: #0369a1; }
+        .section-header.railway { background: #1e40af; }
+        .section-header.mppolice { background: #047857; }
+        .section-header.delhipolice { background: #4338ca; }
+        .section-header.ca-header { background: #991b1b; }
+        .section-header h2 { font-size: 18px; }
         
         /* कार्ड ग्रिड */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
-        .card { background: white; padding: 18px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 5px solid #2563eb; }
-        .card.paid { border-left-color: #d97706; }
-        .card.test { border-left-color: #059669; }
-        .card h3 { font-size: 17px; margin-bottom: 8px; color: #111827; }
-        .card p { font-size: 14px; color: #4b5563; margin-bottom: 15px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 15px; }
+        .card { background: white; padding: 16px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.07); position: relative; border-top: 4px solid #10b981; display: flex; flex-direction: column; justify-content: space-between; }
+        .card.locked { border-top-color: #f59e0b; background: #fffbeb; }
+        .card.ca-locked { border-top-color: #dc2626; background: #fef2f2; }
+        
+        /* बैज */
+        .badge { display: inline-block; padding: 3px 10px; font-size: 11px; font-weight: bold; border-radius: 12px; margin-bottom: 8px; width: fit-content; }
+        .badge-free { background: #d1fae5; color: #065f46; }
+        .badge-paid { background: #fef3c7; color: #92400e; }
+        .badge-ca { background: #fee2e2; color: #991b1b; }
+
+        .card h3 { font-size: 16px; margin-bottom: 6px; color: #0f172a; }
+        .card p { font-size: 13px; color: #475569; margin-bottom: 14px; }
 
         /* बटन */
-        .btn { display: inline-block; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 14px; text-align: center; }
-        .btn-free { background: #2563eb; color: white; }
-        .btn-paid { background: #d97706; color: white; }
-        .btn-test { background: #059669; color: white; }
+        .btn { display: block; width: 100%; padding: 9px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 13px; text-align: center; }
+        .btn-free { background: #10b981; color: white; }
+        .btn-unlock { background: #f59e0b; color: #000; }
+        .btn-ca { background: #dc2626; color: white; }
         .btn:hover { opacity: 0.9; }
 
-        /* फुटर */
-        footer { text-align: center; padding: 20px; background: #1f2937; color: #9ca3af; margin-top: 40px; font-size: 14px; }
+        /* प्रीमियम बैनर */
+        .vip-banner { background: linear-gradient(135deg, #b45309, #f59e0b); color: white; padding: 20px; border-radius: 10px; text-align: center; margin-top: 35px; }
+        .vip-banner h3 { font-size: 20px; margin-bottom: 8px; }
+        .vip-banner a { display: inline-block; background: #0f172a; color: white; padding: 10px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+
+        footer { text-align: center; padding: 20px; background: #0f172a; color: #94a3b8; margin-top: 40px; font-size: 14px; }
     </style>
 </head>
 <body>
 
-    <!-- हेडर और लोगो -->
     <header>
         <div class="logo-container">
-            <!-- अपनी लोगो इमेज का नाम 'logo.png' रखकर GitHub पर अपलोड करें -->
-            <img ">image_30c23e71 (1).jpg" alt="Vishnu Learning Hub Logo">
+            <img src="image_30c23e71 (1).jpg" alt="Vishnu Learning Hub">
             <div>
                 <h1>Vishnu Learning Hub</h1>
-                <p style="font-size: 13px; color: #bfdbfe;">SSC, Railway, Police & All Competitive Exams</p>
+                <p style="font-size: 13px; color: #dbeafe;">SSC | Railway | MP Police | Delhi Police | Current Affairs 2026</p>
             </div>
         </div>
         <nav>
-            <a href="#free-pdf">फ्री PDF</a>
-            <a href="#paid-pdf">पेड E-Books</a>
-            <a href="#mock-test">ऑनलाइन टेस्ट</a>
+            <a href="#ssc-papers">SSC GD / CGL</a>
+            <a href="#railway-papers">Railway / RRB</a>
+            <a href="#mp-police-papers">MP Police</a>
+            <a href="#delhi-police-papers">Delhi Police</a>
+            <a href="#tests">मॉक टेस्ट</a>
+            <a href="#pdfs">स्टडी PDF</a>
+            <a href="#current-affairs">करंट अफेयर्स 2026</a>
         </nav>
     </header>
 
     <div class="container">
 
-        <!-- 1. फ्री पीडीएफ सेक्शन -->
-        <h2 id="free-pdf" class="section-title">📚 फ्री स्टडी PDF (Free Notes)</h2>
+        <div style="text-align: center;">
+            <h2 class="main-heading">📂 परीक्षा-वार 8-8 प्रीवियस ईयर पेपर के जोड़े (सिर्फ ₹19 में)</h2>
+        </div>
+
+        <!-- 1. SSC (GD, CGL) पेपर सेक्शन -->
+        <div id="ssc-papers" class="section-header ssc">
+            <h2>🏛️ SSC प्रीवियस ईयर पेपर (GD, CGL, CHSL)</h2>
+        </div>
         <div class="grid">
             <div class="card">
-                <h3>SSC सामान्य ज्ञान (GK) नोट्स</h3>
-                <p>इतिहास, भूगोल और संविधान के महत्वपूर्ण वन-लाइनर प्रश्न।</p>
-                <!-- नीचे Google Drive का लिंक डालें -->
-                <a href="यहाँ-अपना-GOOGLE-DRIVE-लिंक-डालें" target="_blank" class="btn btn-free">डाउनलोड करें (Free)</a>
+                <div>
+                    <span class="badge badge-free">✅ FREE DEMO</span>
+                    <h3>SSC डेमो पेपर (1 सेट फ्री)</h3>
+                    <p>SSC GD/CGL का 1 सैंपल पेपर हल सहित बिल्कुल फ्री देखें।</p>
+                </div>
+                <a href="यहाँ-SSC-फ्री-लिंक-डालें" target="_blank" class="btn btn-free">अभी फ्री खोलें</a>
             </div>
+            <div class="card locked">
+                <div>
+                    <span class="badge badge-paid">🔒 PAIR - 01 (8 पेपर)</span>
+                    <h3>SSC पेपर सेट (1 से 8 तक)</h3>
+                    <p>SSC GD और CGL के 8 शिफ्ट के पुराने प्रश्न पत्र हल सहित।</p>
+                </div>
+                <a href="यहाँ-SSC-PAIR1-पेमेंट-लिंक-डालें" target="_blank" class="btn btn-unlock">🔒 8 पेपर अनलॉक करें (₹19)</a>
+            </div>
+            <div class="card locked">
+                <div>
+                    <span class="badge badge-paid">🔒 PAIR - 02 (8 पेपर)</span>
+                    <h3>SSC पेपर सेट (9 से 16 तक)</h3>
+                    <p>अगले 8 महत्वपूर्ण प्रीवियस ईयर पेपर का पूरा बंडल (हल सहित)।</p>
+                </div>
+                <a href="यहाँ-SSC-PAIR2-पेमेंट-लिंक-डालें" target="_blank" class="btn btn-unlock">🔒 8 पेपर अनलॉक करें (₹19)</a>
+            </div>
+            <div class="card locked">
+                <div>
+                    <span class="badge badge-paid">🔒 PAIR - 03 (8 पेपर)</span>
+                    <h3>SSC पेपर सेट (17 से 24 तक)</h3>
+                    <p>SSC के चुनिंदा 8 प्रीवियस ईयर पेपर का तीसरा स्पेशल जोड़ा।</p>
+                </div>
+                <a href="यहाँ-SSC-PAIR3-पेमेंट-लिंक-डालें" target="_blank" class="btn btn-unlock">🔒 8 पेपर अनलॉक करें (₹19)</a>
+            </div>
+        </div>
+
+        <!-- 2. रेलवे (Railway / RRB) पेपर सेक्शन -->
+        <div id="railway-papers" class="section-header railway">
+            <h2>🚆 Railway / RRB प्रीवियस ईयर पेपर (NTPC, Group-D, ALP)</h2>
+        </div>
+        <div class="grid">
             <div class="card">
-                <h3>Railway विज्ञान (Science) PDF</h3>
-                <p>पिछली परीक्षाओं में पूछे गए 500+ महत्वपूर्ण प्रश्न उत्तर सहित।</p>
-                <a href="यहाँ-अपना-GOOGLE-DRIVE-लिंक-डालें" target="_blank" class="btn btn-free">डाउनलोड करें (Free)</a>
+                <div>
+                    <span class="badge badge-free">✅ FREE DEMO</span>
+                    <h3>Railway डेमो पेपर (1 सेट फ्री)</h3>
+                    <p>रेलवे परीक्षा का 1 सैंपल पेपर हल सहित बिल्कुल फ्री पढ़ें।</p>
+                </div>
+                <a href="यहाँ-रेलवे-फ्री-लिंक-डालें" target="_blank" class="btn btn-free">अभी फ्री खोलें</a>
+            </div>
+            <div class="card locked">
+                <div>
+                    <span class="badge badge-paid">🔒 PAIR - 01 (8 पेपर)</span>
+                    <h3>Railway पेपर सेट (1 से 8 तक)</h3>
+                    <p>RRB NTPC और Group-D के 8 पुराने पेपर हल सहित।</p>
+                </div>
+                <a href="यहाँ-रेलवे-PAIR1-पेमेंट-लिंक-डालें" target="_blank" class="btn btn-unlock">🔒 8 पेपर अनलॉक करें (₹19)</a>
+            </div>
+            <div class="card locked">
+                <div>
+                    <span class="badge badge-paid">🔒 PAIR - 02 (8 पेपर)</span>
+                    <h3>Railway पेपर सेट (9 से 16 तक)</h3>
+                    <p>रेलवे भर्ती के अगले 8 शिफ्ट के प्रश्नों का पूरा संग्रह।</p>
+                </div>
+                <a href="यहाँ-रेलवे-PAIR2-पेमेंट-लिंक-डालें" target="_blank" class="btn btn-unlock">🔒 8 पेपर अनलॉक करें (₹19)</a>
+            </div>
+            <div class="card locked">
+                <div>
+                    <span class="badge badge-paid">🔒 PAIR - 03 (8 पेपर)</span>
+                    <h3>Railway पेपर सेट (17 से 24 तक)</h3>
+                    <p>ALP और टेक्निकल परीक्षा के 8 प्रीवियस ईयर पेपर (हल सहित)।</p>
+                </div>
+                <a href="यहाँ-रेलवे-PAIR3-पेमेंट-लिंक-डालें" target="_blank" class="btn btn-unlock">🔒 8 पेपर अनलॉक करें (₹19)</a>
             </div>
         </div>
 
-        <!-- 2. पेड पीडीएफ सेक्शन -->
-        <h2 id="paid-pdf" class="section-title" style="background: #d97706;">💎 प्रीमियम पेड PDF (Paid E-Books)</h2>
+        <!-- 3. एमपी पुलिस (MP Police) पेपर सेक्शन -->
+        <div id="mp-police-papers" class="section-header mppolice">
+            <h2>👮‍♂️ MP Police प्रीवियस ईयर पेपर (Constable & SI)</h2>
+        </div>
         <div class="grid">
-            <div class="card paid">
-                <h3>संपूर्ण करंट अफेयर्स 2026 (E-Book)</h3>
-                <p>पूरे साल का निचोड़ + 1000 MCQs। कीमत: <strong>₹49 केवल</strong></p>
-                <!-- नीचे Razorpay / Cosmofeed / WhatsApp लिंक डालें -->
-                <a href="यहाँ-पेमेंट-या-WHATSAPP-लिंक-डालें" target="_blank" class="btn btn-paid">अभी खरीदें (₹49)</a>
-            </div>
-            <div class="card paid">
-                <h3>Police भर्ती स्पेशल रीजनिंग और मैथ्स बुक</h3>
-                <p>शॉर्ट ट्रिक्स के साथ संपूर्ण हल प्रश्न पत्र। कीमत: <strong>₹79 केवल</strong></p>
-                <a href="यहाँ-पेमेंट-या-WHATSAPP-लिंक-डालें" target="_blank" class="btn btn-paid">अभी खरीदें (₹79)</a>
-            </div>
-        </div>
-
-        <!-- 3. ऑनलाइन टेस्ट सेक्शन -->
-        <h2 id="mock-test" class="section-title" style="background: #059669;">📝 फ्री ऑनलाइन टेस्ट सीरीज (Mock Tests)</h2>
-        <div class="grid">
-            <div class="card test">
-                <h3>SSC GD / Police मॉक टेस्ट - 01</h3>
-                <p>कुल प्रश्न: 25 | समय: 20 मिनट | तुरंत अपना स्कोर देखें।</p>
-                <!-- नीचे Google Form क्विज़ का लिंक डालें -->
-                <a href="यहाँ-GOOGLE-FORM-टेस्ट-लिंक-डालें" target="_blank" class="btn btn-test">टेस्ट शुरू करें</a>
-            </div>
-            <div class="card test">
-                <h3>Railway NTPC स्पेशल क्विज़ - 02</h3>
-                <p>सामान्य विज्ञान और करंट अफेयर्स लाइव टेस्ट।</p>
-                <a href="यहाँ-GOOGLE-FORM-टेस्ट-लिंक-डालें" target="_blank" class="btn btn-test">टेस्ट शुरू करें</a>
-            </div>
-        </div>
-
-    </div>
-
-    <footer>
-        <p>© 2026 Vishnu Learning Hub | संपर्क करें: अपना ईमेल या Telegram लिंक यहाँ लिखें</p>
-    </footer>
-
-</body>
-</html>
+            <div class="card">
+                <div>
+                    <span class="badge badge-free">✅ FREE DEMO</span>
+                    <h3>MP Police डेमो पेपर (1 सेट फ्री)</h3>
+                    <p>MP पुलिस कांस्टेबल का 1 पुराना पेपर बिल्कुल फ्री खोलकर देखें।</p>
+                </div>
