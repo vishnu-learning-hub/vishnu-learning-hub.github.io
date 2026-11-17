@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishnu Learning Hub</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#f3f6fc;
+ color:#17243b;
+}
+header{
+ background:#10264b;
+ color:white;
+ text-align:center;
+ padding:25px 12px;
+}
+.logo{
+ width:75px;height:75px;
+ margin:auto;
+ border:3px solid white;
+ border-radius:50%;
+ display:grid;
+ place-items:center;
+ font-size:27px;
+ font-weight:bold;
+ background:#2876cf;
+}
+header h1{margin:12px 0 5px;font-size:25px}
+header p{margin:8px;font-size:14px}
+nav{
+ background:#1c447d;
+ padding:13px 5px;
+ text-align:center;
+}
+nav a{
+ color:white;
+ text-decoration:none;
+ margin:8px;
+ font-size:14px;
+}
+.hero{
+ text-align:center;
+ padding:35px 15px;
+ background:white;
+}
+.hero h2{color:#174b91;font-size:25px}
+.hero p{line-height:1.7}
+.container{padding:20px;max-width:950px;margin:auto}
+h2.section{text-align:center;color:#174b91}
+.cards{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:13px;
+}
+.card{
+ background:white;
+ padding:20px 10px;
+ border-radius:12px;
+ text-align:center;
+ box-shadow:0 2px 9px #dce3ee;
+}
+.card h3{color:#174b91}
+.card p{font-size:14px;line-height:1.5}
+.btn{
+ display:inline-block;
+ background:#1764bb;
+ color:white;
+ padding:11px 18px;
+ border-radius:7px;
+ text-decoration:none;
+ margin-top:8px;
+}
+.notice{
+ background:#e4efff;
+ padding:18px;
+ border-radius:12px;
+ line-height:1.7;
+}
+footer{
+ background:#10264b;
+ color:white;
+ text-align:center;
+ padding:22px;
+ margin-top:25px;
+ line-height:1.8;
+}
+@media(max-width:400px){
+ header h1{font-size:21px}
+ .container{padding:13px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">VLH</div>
+<h1>VISHNU LEARNING HUB</h1>
+<p>Learn Easy • Prepare Smart • Achieve Success</p>
+<p>आपकी सफलता, हमारा लक्ष्य</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#exams">Exams</a>
+<a href="#subjects">Subjects</a>
+<a href="#pdf">PDF Notes</a>
+</nav>
+
+<section class="hero" id="home">
+<h2>आपका स्वागत है!</h2>
+<p>
+SSC, Railway (RRB), MP Police और अन्य
+Competitive Exams की तैयारी अब आसान हिंदी में।
+</p>
+<p>सीखें आसान भाषा में और तैयारी करें पूरे आत्मविश्वास के साथ।</p>
+<a class="btn" href="#subjects">पढ़ाई शुरू करें</a>
+</section>
+
+<div class="container" id="exams">
+<h2 class="section">हमारी परीक्षाएँ</h2>
+<div class="cards">
+<div class="card"><h3>SSC Exams</h3><p>SSC GD, CHSL, CGL और अन्य परीक्षाएँ</p></div>
+<div class="card"><h3>Railway Exams</h3><p>RRB Technician, NTPC और Group D</p></div>
+<div class="card"><h3>MP Police</h3><p>मध्य प्रदेश पुलिस भर्ती की तैयारी</p></div>
+<div class="card"><h3>State Police</h3><p>अन्य राज्यों की पुलिस परीक्षाएँ</p></div>
+</div>
+</div>
+
+<div class="container" id="subjects">
+<h2 class="section">हमारे विषय</h2>
+<div class="cards">
+<div class="card"><h3>सामान्य ज्ञान (GK)</h3><p>इतिहास, भूगोल और संविधान</p></div>
+<div class="card"><h3>Physics</h3><p>भौतिक विज्ञान और महत्वपूर्ण सूत्र</p></div>
+<div class="card"><h3>Chemistry</h3><p>रसायन विज्ञान और आसान ट्रिक्स</p></div>
+<div class="card"><h3>Biology</h3><p>जीव विज्ञान और मानव शरीर</p></div>
+</div>
+</div>
+
+<div class="container" id="pdf">
+<h2 class="section">Study Material & PDF</h2>
+<div class="cards">
+<div class="card">
+<h3>Free PDF</h3>
+<p>निःशुल्क नोट्स और प्रश्न-उत्तर</p>
+<a class="btn" href="#free-pdfs">Free Notes</a>
+</div>
+<div class="card">
+<h3>Paid PDF</h3>
+<p>विशेष अध्ययन सामग्री और नोट्स</p>
+<a class="btn" href="#paid-pdfs">जानकारी देखें</a>
+</div>
+</div>
+</div>
+
+<div class="container" id="free-pdfs">
+<div class="notice">
+<h3>निःशुल्क अध्ययन सामग्री</h3>
+<p>जल्द ही यहाँ GK, Science, History और परीक्षा उपयोगी PDF उपलब्ध कराई जाएँगी।</p>
+</div>
+</div>
+
+<div class="container" id="paid-pdfs">
+<div class="notice">
+<h3>विशेष Paid PDF</h3>
+<p>विशेष नोट्स और PDF की सुविधा जल्द शुरू होगी।</p>
+</div>
+</div>
+
+<footer>
+<h3>Vishnu Learning Hub</h3>
+<p>सीखें आसान भाषा में, सफलता पाएँ अपने दम पर।</p>
+<p>SSC | Railway | Police | Competitive Exams</p>
+<p>© 2026 Vishnu Learning Hub</p>
+</footer>
+
+</body>
+</html>
