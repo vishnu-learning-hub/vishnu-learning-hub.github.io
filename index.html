@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -7,27 +6,56 @@
 <title>Vishnu Learning Hub</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f3f6fc;color:#17243b}
-header{background:#10264b;color:white;text-align:center;padding:25px 12px}
-.logo{font-size:35px;font-weight:bold;color:#ffd34d}
-header p{margin:8px}
-nav{background:#183b70;padding:13px;text-align:center}
-nav a{color:white;text-decoration:none;margin:8px;font-weight:bold}
-.hero{text-align:center;padding:35px 15px;background:#e2edff}
-.hero h1{color:#12366c}
-.container{max-width:950px;margin:auto;padding:15px}
-.card{background:white;padding:20px;margin:15px 0;border-radius:12px;box-shadow:0 2px 8px #ccd3df}
-h2{color:#12366c}
-.btn{display:inline-block;background:#1456a0;color:white;padding:11px 18px;border-radius:7px;text-decoration:none;margin-top:8px}
-input{width:100%;padding:13px;border:1px solid #aaa;border-radius:8px}
-footer{background:#10264b;color:white;text-align:center;padding:25px;margin-top:30px}
+body{margin:0;font-family:Arial,sans-serif;background:#f1f5ff;color:#172b4d;scroll-behavior:smooth}
+header{background:#102b59;color:white;text-align:center;padding:25px 12px}
+
+/* लोगो की स्टाइलिंग */
+.logo-container{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.site-logo{width:85px;height:85px;border-radius:50%;object-fit:cover;border:3px solid #ffffff;background:#ffffff;box-shadow:0 4px 10px rgba(0,0,0,0.2)}
+.logo-text{font-size:30px;font-weight:bold}
+
+header p{margin:6px 0}
+nav{background:#194b83;padding:14px 5px;text-align:center;position:sticky;top:0;z-index:100}
+nav a{color:white;text-decoration:none;font-weight:bold;margin:8px 12px;display:inline-block}
+nav a:hover{text-decoration:underline}
+.hero{text-align:center;padding:45px 15px;background:#dceaff}
+.hero h1{font-size:34px;margin-bottom:10px}
+.hero p{font-size:19px;line-height:1.6}
+.btn{display:inline-block;background:#1760a5;color:white;padding:13px 22px;border-radius:9px;text-decoration:none;margin:8px;font-weight:bold;border:none;cursor:pointer;font-size:16px}
+.btn:hover{background:#10467a}
+.btn-test{background:#d97706}
+.btn-test:hover{background:#b45309}
+.container{max-width:900px;margin:auto;padding:20px 15px}
+.card{background:white;padding:24px;margin:18px 0;border-radius:17px;box-shadow:0 4px 15px #00000012}
+.card h2{color:#173d70;margin-top:0}
+.subjects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.subject{background:#e8f1ff;padding:17px;border-radius:10px;text-align:center;font-weight:bold}
+.subject a{color:#174477;text-decoration:none;display:block}
+p{line-height:1.7}
+footer{background:#102b59;color:white;text-align:center;padding:25px;margin-top:30px}
+.small{font-size:14px;color:#667085}
+
+/* ऑनलाइन टेस्ट सेक्शन */
+.test-tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.tab-btn{background:#e8f1ff;color:#173d70;border:2px solid #1760a5;padding:10px 16px;border-radius:8px;cursor:pointer;font-weight:bold}
+.tab-btn.active{background:#1760a5;color:white}
+.question-box{background:#f8fafc;border:1px solid #cbd5e1;padding:16px;border-radius:10px;margin-bottom:15px}
+.question-title{font-weight:bold;margin-bottom:10px;font-size:17px}
+.option-label{display:block;padding:8px 12px;margin:6px 0;background:white;border:1px solid #e2e8f0;border-radius:6px;cursor:pointer}
+.option-label:hover{background:#eff6ff}
+.result-box{padding:18px;border-radius:10px;margin-top:15px;font-weight:bold;font-size:18px;display:none}
+.correct-ans{background:#dcfce7 !important;border-color:#22c55e !important;color:#14532d}
+.wrong-ans{background:#fee2e2 !important;border-color:#ef4444 !important;color:#7f1d1d}
 </style>
 </head>
 <body>
 
 <header>
-<div class="logo">📚 VLH</div>
-<h1>Vishnu Learning Hub</h1>
+<div class="logo-container">
+  <!-- अपने लोगो की फोटो लगाने के लिए नीचे src="" के अंदर अपनी फोटो का लिंक या नाम डालें -->
+  <img src="https://flaticon.com" alt="Vishnu Learning Hub Logo" class="site-logo">
+  <div class="logo-text">Vishnu Learning Hub</div>
+</div>
 <p>सीखें आसान भाषा में, सफलता की ओर बढ़ें</p>
 <p>SSC | Railway | Police | Competitive Exams</p>
 </header>
@@ -35,7 +63,9 @@ footer{background:#10264b;color:white;text-align:center;padding:25px;margin-top:
 <nav>
 <a href="#home">Home</a>
 <a href="#study">Study Material</a>
-<a href="#pdf">PDF Notes</a>
+<a href="#mocktest">📝 Online Test</a>
+<a href="#free">Free PDF</a>
+<a href="#premium">Premium PDF</a>
 <a href="#videos">Videos</a>
 </nav>
 
@@ -43,51 +73,206 @@ footer{background:#10264b;color:white;text-align:center;padding:25px;margin-top:
 <h1>आपका स्वागत है!</h1>
 <p>अब प्रतियोगी परीक्षाओं की तैयारी करें आसान ट्रिक्स और सरल हिंदी में।</p>
 <a class="btn" href="#study">पढ़ाई शुरू करें</a>
+<a class="btn btn-test" href="#mocktest">📝 प्रैक्टिस टेस्ट दें</a>
 </section>
 
 <div class="container">
 
-<div class="card" id="study">
+<!-- ऑनलाइन प्रैक्टिस टेस्ट सेक्शन -->
+<section class="card" id="mocktest">
+<h2>📝 ऑनलाइन प्रैक्टिस टेस्ट</h2>
+<p>अपनी तैयारी जांचने के लिए विषय चुनें और नीचे दिए गए प्रश्नों के उत्तर दें:</p>
+
+<div class="test-tabs">
+<button class="tab-btn active" onclick="loadTest('gk', this)">📖 सामान्य ज्ञान (GK)</button>
+<button class="tab-btn" onclick="loadTest('science', this)">🔬 सामान्य विज्ञान</button>
+<button class="tab-btn" onclick="loadTest('mppolice', this)">👮 MP Police विशेष</button>
+</div>
+
+<div id="quiz-container"></div>
+
+<button class="btn" id="submit-btn" onclick="submitTest()">✅ उत्तर जांचें (Submit)</button>
+<button class="btn" style="background:#475569" onclick="resetCurrentTest()">🔄 फिर से हल करें</button>
+
+<div id="result-box" class="result-box"></div>
+</section>
+
+<section class="card" id="study">
 <h2>📚 Study Material</h2>
 <p>SSC, Railway और Police परीक्षाओं के लिए महत्वपूर्ण अध्ययन सामग्री।</p>
-<p>General Knowledge | Science | History | Geography | Polity</p>
+<div class="subjects">
+<div class="subject"><a href="#gk">📖 सामान्य ज्ञान (GK)</a></div>
+<div class="subject"><a href="#science">🔬 सामान्य विज्ञान</a></div>
+<div class="subject"><a href="#history">🏛️ इतिहास</a></div>
+<div class="subject"><a href="#geography">🌍 भूगोल</a></div>
+<div class="subject"><a href="#polity">⚖️ संविधान (Polity)</a></div>
+<div class="subject"><a href="#railway">🚆 Railway विशेष</a></div>
+<div class="subject"><a href="#police">👮 MP Police विशेष</a></div>
 </div>
+</section>
 
-<div class="card" id="pdf">
+<section class="card" id="gk">
+<h2>📖 सामान्य ज्ञान (GK)</h2>
+<p>भारत का इतिहास, महत्वपूर्ण दिवस, पुरस्कार, खेल और सामान्य ज्ञान।</p>
+</section>
+
+<section class="card" id="science">
+<h2>🔬 सामान्य विज्ञान</h2>
+<p>भौतिक विज्ञान, रसायन विज्ञान और जीव विज्ञान। आसान ट्रिक्स और महत्वपूर्ण प्रश्न।</p>
+</section>
+
+<section class="card" id="history">
+<h2>🏛️ इतिहास</h2>
+<p>प्राचीन, मध्यकालीन और आधुनिक भारतीय इतिहास।</p>
+</section>
+
+<section class="card" id="geography">
+<h2>🌍 भूगोल</h2>
+<p>भारत का भूगोल, विश्व भूगोल, नदियाँ, पर्वत और मानचित्र।</p>
+</section>
+
+<section class="card" id="polity">
+<h2>⚖️ भारतीय संविधान</h2>
+<p>संविधान के अनुच्छेद, मौलिक अधिकार और महत्वपूर्ण तथ्य।</p>
+</section>
+
+<section class="card" id="railway">
+<h2>🚆 Railway विशेष तैयारी</h2>
+<p>RRB Technician, NTPC और Group D के लिए महत्वपूर्ण नोट्स और प्रश्न।</p>
+</section>
+
+<section class="card" id="police">
+<h2>👮 MP Police विशेष तैयारी</h2>
+<p>मध्य प्रदेश सामान्य ज्ञान, विज्ञान, रीजनिंग और महत्वपूर्ण प्रश्न।</p>
+</section>
+
+<section class="card" id="free">
 <h2>📄 Free PDF Notes</h2>
-<p>यहाँ निःशुल्क PDF नोट्स उपलब्ध होंगे।</p>
-<p>जल्द ही सभी विषयों की PDF यहाँ जोड़ी जाएँगी।</p>
-</div>
+<p>यहाँ सभी विषयों की निःशुल्क PDF नोट्स उपलब्ध कराई जाएँगी।</p>
+<p>PDF जल्द जोड़ी जाएँगी।</p>
+</section>
 
-<div class="card">
-<h2>🔒 Premium PDF Notes</h2>
-<p>जल्द ही कम कीमत में विशेष PDF और टेस्ट सीरीज उपलब्ध होंगी।</p>
-</div>
+<section class="card" id="premium">
+<h2>🔐 Premium PDF Notes</h2>
+<p>कम कीमत में विशेष PDF नोट्स, टेस्ट सीरीज और महत्वपूर्ण प्रश्न उपलब्ध होंगे।</p>
+<p class="small">भुगतान और डाउनलोड की सुविधा जल्द जोड़ी जाएगी।</p>
+</section>
 
-<div class="card" id="videos">
-<h2>▶ YouTube Classes</h2>
-<p>हमारे YouTube चैनल पर वीडियो क्लास देखें।</p>
-<a class="btn" href="https://www.youtube.com/" target="_blank">YouTube पर जाएँ</a>
-</div>
+<section class="card" id="videos">
+<h2>▶️ YouTube Videos</h2>
+<p>हमारे Vishnu Learning Hub चैनल पर वीडियो क्लास, शॉर्ट ट्रिक्स और संपूर्ण थ्योरी क्लास देखें।</p>
+<p>जल्द ही यहाँ वीडियो लिंक जोड़े जाएँगे।</p>
+</section>
 
-<div class="card">
-<h2>🎯 हमारी परीक्षाएँ</h2>
-<p>SSC | RRB NTPC | RRB Technician | Group D | MP Police</p>
-</div>
-
-<div class="card">
-<h2>📞 Contact Us</h2>
-<p>Vishnu Learning Hub</p>
-<p>आपकी सफलता ही हमारा लक्ष्य है।</p>
-</div>
+<section class="card">
+<h2>हमारे बारे में</h2>
+<p>Vishnu Learning Hub का उद्देश्य SSC, Railway और Police जैसी प्रतियोगी परीक्षाओं के विद्यार्थियों को सरल हिंदी में गुणवत्तापूर्ण अध्ययन सामग्री उपलब्ध कराना है।</p>
+</section>
 
 </div>
 
 <footer>
-<h3>Vishnu Learning Hub</h3>
-<p>Learn Today, Succeed Tomorrow!</p>
-<p>© 2026 Vishnu Learning Hub</p>
+<h3>📚 Vishnu Learning Hub</h3>
+<p>आपकी सफलता, हमारा लक्ष्य!</p>
+<p>SSC | Railway | Police | Competitive Exams</p>
 </footer>
 
-</body>
-</html>
+<script>
+// भविष्य में नए प्रश्न जोड़ने के लिए सिर्फ इसी हिस्से में बदलाव करें
+const testData = {
+  gk: [
+    {
+      q: "1. भारत के संविधान का जनक किसे कहा जाता है?",
+      options: ["महात्मा गांधी", "डॉ. भीमराव अंबेडकर", "जवाहरलाल नेहरू", "सरदार पटेल"],
+      answer: 1
+    },
+    {
+      q: "2. भारत की सबसे लंबी नदी कौन सी है?",
+      options: ["यमुना", "गोदावरी", "गंगा", "नर्मदा"],
+      answer: 2
+    },
+    {
+      q: "3. राष्ट्रीय विज्ञान दिवस कब मनाया जाता है?",
+      options: ["28 फरवरी", "15 अगस्त", "5 जून", "10 दिसंबर"],
+      answer: 0
+    }
+  ],
+  science: [
+    {
+      q: "1. कोशिका का 'पावर हाउस' (शक्ति गृह) किसे कहा जाता है?",
+      options: ["राइबोसोम", "माइटोकॉन्ड्रिया", "लाइसोसोम", "केंद्रक"],
+      answer: 1
+    },
+    {
+      q: "2. मनुष्य के शरीर में रक्त का शुद्धिकरण कहाँ होता है?",
+      options: ["हृदय", "फेफड़े", "किडनी (वृक्क)", "यकृत"],
+      answer: 2
+    },
+    {
+      q: "3. विद्युत धारा (Electric Current) का SI मात्रक क्या है?",
+      options: ["वोल्ट", "ओम", "एम्पियर", "वाट"],
+      answer: 2
+    }
+  ],
+  mppolice: [
+    {
+      q: "1. मध्य प्रदेश की राजधानी क्या है?",
+      options: ["इंदौर", "जबलपुर", "भोपाल", "ग्वालियर"],
+      answer: 2
+    },
+    {
+      q: "2. कान्हा किसली राष्ट्रीय उद्यान किस जिले में स्थित है?",
+      options: ["मंडला", "उमरिया", "सिवनी", "होशंगाबाद"],
+      answer: 0
+    },
+    {
+      q: "3. मध्य प्रदेश का राजकीय वृक्ष कौन सा है?",
+      options: ["नीम", "बरगद", "पीपल", "आम"],
+      answer: 1
+    }
+  ]
+};
+
+let currentCategory = 'gk';
+
+function loadTest(category, btnElement) {
+  currentCategory = category;
+  
+  if (btnElement) {
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    btnElement.classList.add('active');
+  }
+
+  const container = document.getElementById('quiz-container');
+  const resultBox = document.getElementById('result-box');
+  resultBox.style.display = 'none';
+  container.innerHTML = '';
+
+  const questions = testData[category];
+  questions.forEach((item, qIndex) => {
+    let optionsHTML = '';
+    item.options.forEach((opt, oIndex) => {
+      optionsHTML += `
+        <label class="option-label" id="label-${qIndex}-${oIndex}">
+          <input type="radio" name="q${qIndex}" value="${oIndex}"> ${opt}
+        </label>
+      `;
+    });
+
+    container.innerHTML += `
+      <div class="question-box">
+        <div class="question-title">${item.q}</div>
+        ${optionsHTML}
+      </div>
+    `;
+  });
+}
+
+function submitTest() {
+  const questions = testData[currentCategory];
+  let score = 0;
+
+  questions.forEach((item, qIndex) => {
+    const selected = document.querySelector(`input[name="q${qIndex}"]:checked`);
+    const correctLabel = document.getElementById(`label-${qIndex}-${item.answer}`);
+    
